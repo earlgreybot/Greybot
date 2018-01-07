@@ -161,5 +161,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 function add_google_fonts() {
-		wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Courgette|News+Cycle' )
+		wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Courgette|News+Cycle' , false);
 		add_action ('wp_enqueue_scripts', 'add_google_fonts' );
+}
