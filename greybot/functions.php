@@ -114,12 +114,14 @@ function greybot_widgets_init() {
 add_action( 'widgets_init', 'greybot_widgets_init' );
 
 /**
- * Enqueue scripts and styles (including bootstrap).
+ * Enqueue scripts and styles, including bootstrap and bebas neue (font).
  */
 function greybot_scripts() {
 	wp_enqueue_style( 'greybot-style', get_stylesheet_uri() );
 	
 	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/bootstrap/css/bootstrap.css' );
+	
+	wp_enqueue_style( 'bebasneue', get_template_directory_uri() . '/font/stylesheet.css' );
 	
 	wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/bootstrap/js/bootstrap.js' );
 
