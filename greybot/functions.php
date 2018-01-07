@@ -160,3 +160,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function add_google_fonts() {
+		wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Courgette|News+Cycle' )
+		add_action ('wp_enqueue_scripts', 'add_google_fonts' );
