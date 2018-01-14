@@ -165,7 +165,7 @@ function folio_post_type() {
 	$labels = array(
 		'name'                  => _x( 'Folio Items', 'Post Type General Name', 'text_domain' ),
 		'singular_name'         => _x( 'Folio Item', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'Post Types', 'text_domain' ),
+		'menu_name'             => __( 'Folio', 'text_domain' ),
 		'name_admin_bar'        => __( 'Post Type', 'text_domain' ),
 		'archives'              => __( 'Item Archives', 'text_domain' ),
 		'attributes'            => __( 'Item Attributes', 'text_domain' ),
