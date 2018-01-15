@@ -881,3 +881,16 @@ body {
 h1, h2, h3, h5, h6 {
 	color: #7D7D7D;
 }
+
+#site-navigation {
+	font-size: 2em;
+	padding: 20px; 
+	right: 90%;
+	display: inline;
+	outline: red solid 1px;
+	width: 40%;
+}
+
+.menu-item {
+	padding: 20px;
+}
