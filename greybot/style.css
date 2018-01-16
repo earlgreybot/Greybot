@@ -24,6 +24,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 ----------------------------------------------------------------
 # Normalize
 # Typography
+# Fonts
 # Elements
 # Forms
 # Navigation
@@ -254,6 +255,15 @@ td,
 th {
 	padding: 0;
 }
+
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+@font-face {
+	font-family: 'bebas neue';
+	src: url('http://www.earlgreybot.com/wp-content/themes/greybot/fonts/bebasneue-webfont.woff');
+} 
+
 
 /*--------------------------------------------------------------
 # Typography
@@ -870,6 +880,8 @@ Dark Blue          rgba(0, 0, 42, 1)                #00002A
 
 */
 
+
+
 /*--------------------------------------------------------------
 ## Colours
 --------------------------------------------------------------*/
@@ -882,15 +894,35 @@ h1, h2, h3, h5, h6 {
 	color: #7D7D7D;
 }
 
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+
 #site-navigation {
-	font-size: 2em;
+	font-size: 200%;
 	padding: 20px; 
 	right: 90%;
 	display: inline;
 	outline: red solid 1px;
-	width: 40%;
+	width: 50%;
+	font-family: 'bebas neue', impact;
+}
+
+._mi {
+	font-size: 250%;
+	top: 50px;
+	position: static; 
 }
 
 .menu-item {
 	padding: 20px;
 }
+
+
+/*--------------------------------------------------------------
+## Debug
+--------------------------------------------------------------*/
+
+/* * { */
+	/* outline: red solid 1px; */
+/* } */
