@@ -901,12 +901,14 @@ h1, h2, h3, h5, h6 {
 #site-navigation {
 	font-size: 200%;
 	display: inline;
-	outline: red solid 1px;
+	position: relative;
+	float: right;
 	font-family: 'bebas neue', impact;
 }
 
 .main-navigation > a {
 	background-color: blue;
+	float: right;
 }
 
 ._mi{
@@ -922,7 +924,7 @@ h1, h2, h3, h5, h6 {
 
 /*--------------------------------------------------------------
 ## Debug
---------------------------------------------------------------*/
+--------------------------------------------------------------
 
 * {
 	outline: red solid 1px;
