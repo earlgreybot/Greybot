@@ -264,10 +264,15 @@ th {
 	src: url('http://www.earlgreybot.com/wp-content/themes/greybot/fonts/bebasneue-webfont.woff');
 } 
 
+@import url('https://fonts.googleapis.com/css?family=Courgette|News+Cycle');
 
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
 body,
 button,
 input,
@@ -275,18 +280,21 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: 'news cycle', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	clear: both;
+footer, 
+aside {
+	font-family: 'news cycle', sans-serif;
 }
+
 
 p {
 	margin-bottom: 1.5em;
+	font-family: 'news cycle', sans-serif;
 }
 
 dfn, cite, em, i {
@@ -295,10 +303,12 @@ dfn, cite, em, i {
 
 blockquote {
 	margin: 0 1.5em;
+	font-family: 'news cycle', sans-serif;
 }
 
 address {
 	margin: 0 0 1.5em;
+	font-family: 'news cycle', sans-serif;
 }
 
 pre {
@@ -892,6 +902,7 @@ body {
 
 h1, h2, h3, h5, h6 {
 	color: #7D7D7D;
+	font-family: 'Courgette', cursive !important;
 }
 
 /*--------------------------------------------------------------
@@ -904,6 +915,7 @@ h1, h2, h3, h5, h6 {
 	position: relative;
 	float: right;
 	font-family: 'bebas neue', impact;
+	padding: 30px;
 }
 
 .main-navigation > a {
