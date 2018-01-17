@@ -24,8 +24,8 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'greybot' ); ?></a>
 
-	<header id="masthead" class="site-header container">
-		<div class="site-branding  col-md-4">
+	<header id="masthead" class="site-header container-fluid">
+		<div class="site-branding  col-md-4 col-l-4 col-xs-12 col-s-12">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
@@ -42,7 +42,7 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation col-md-8">
+		<nav id="site-navigation" class="main-navigation col-md-8 col-l-8 col-xs-12 col-s-12">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'greybot' ); ?></button>
 			<?php
 				wp_nav_menu( array(
