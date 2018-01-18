@@ -899,10 +899,7 @@ body {
 	color: #00002A;
 }
 
-h1, h2, h3, h5, h6 {
-	color: #7D7D7D;
-	font-family: 'Courgette', cursive !important;
-}
+
 
 /*--------------------------------------------------------------
 ## Header
@@ -915,6 +912,11 @@ h1, h2, h3, h5, h6 {
 	float: right;
 	font-family: 'bebas neue', impact;
 	padding: 30px;
+}
+
+h1, h2, h3, h5, h6 {
+	color: #7D7D7D;
+	font-family: 'Courgette', cursive !important;
 }
 
 .main-navigation > a {
@@ -930,6 +932,10 @@ h1, h2, h3, h5, h6 {
 
 .menu-item {
 	width: 130px;
+}
+
+#folio {
+	color: red;
 }
 
 
