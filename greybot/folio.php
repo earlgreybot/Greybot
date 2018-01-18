@@ -20,20 +20,25 @@ get_header(); ?>
 
 	<div id="folio" class="content-area">
 		<main id="main" class="site-folio">
-		<h1> test </h1>
 			<?php
-			while ( have_posts() ) : the_post();
-
-				get_template_part( 'template-parts/content', 'page' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-
-			endwhile; // End of the loop.
+			$args = array(
+				'post-type' => 'folio',
+				'orderby' => 'menu_order',
+				'order' => 'ASC'
+			);
+			$folio = new WP-Query($args);
 			?>
-
+			
+			<?php if( $folio->have_posts() ): ?>
+				<?php while( $folio->haveposts() ): $folio->the_post(); ?>
+					<article class="project col-md-4">
+						<h2><?php the_title(); ?></h2>
+						<?php the_content(); ?>
+					</article>
+				<?php endwhile; ?>
+			<?php else: ?>
+				<p>Sorry, there are no projects to be found. </p>
+			<?php endif; ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
