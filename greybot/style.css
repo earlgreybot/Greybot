@@ -257,14 +257,13 @@ th {
 }
 
 /*--------------------------------------------------------------
-# Fonts
+# Fonts (moved google fonts to header.php)
 --------------------------------------------------------------*/
 @font-face {
 	font-family: 'bebas neue';
 	src: url('http://www.earlgreybot.com/wp-content/themes/greybot/fonts/bebasneue-webfont.woff');
 } 
 
-@import url('https://fonts.googleapis.com/css?family=Courgette|News+Cycle');
 
 /*--------------------------------------------------------------
 # Typography
