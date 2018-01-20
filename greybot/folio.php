@@ -25,8 +25,8 @@ get_header(); ?>
 			// query parameters
 			$args = array(
 				'post_type' => 'folio',
-				'orderby' => 'menu_order',
-				'order' => 'ASC'
+				'orderby' => 'date',
+				'order' => 'DESC'
 			);
 			$folio = new WP_Query($args);
 			?>
