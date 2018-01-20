@@ -30,9 +30,26 @@
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> 
+				
+			<span id=grey>
+				G<span id=sm>rey</span>
+				</span>
+				<span id=mcgowan>
+				M<span id=sm>c</span>g<span id=sm>owan</span>
+			</span>
+				
+				</a></h1>
 			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				
+				<span id=grey>
+				G<span id=sm>rey</span>
+				</span>
+				<span id=mcgowan>
+				M<span id=sm>c</span>g<span id=sm>owan</span>
+				</span>
+				</a></p>
 			<?php
 			endif;
 
@@ -43,7 +60,7 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation col-md-8">
+		<nav id="site-navigation" class="main-navigation col-md-6">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'greybot' ); ?></button>
 			<?php
 				wp_nav_menu( array(
@@ -51,6 +68,10 @@
 					'menu_id'        => 'primary-menu',
 				) );
 			?>
+			
+		<div id=search class='col-md-2'>
+		<?php get_search_form(); ?>
+		</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

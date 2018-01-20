@@ -19,20 +19,34 @@
 get_header(); ?>
 
 	<div id="folio" class="content-area">
-		<main id="main" class="site-folio">
+		<h1 id='folioh'> Folio </h1>
+		<main id="main" class="site-folio row">
 			<?php
+			// query parameters
 			$args = array(
-				'post-type' => 'folio',
+				'post_type' => 'folio',
 				'orderby' => 'menu_order',
 				'order' => 'ASC'
 			);
-			$folio = new WP-Query($args);
+			$folio = new WP_Query($args);
 			?>
 			
-			<?php if( $folio->have_posts() ): ?>
-				<?php while( $folio->haveposts() ): $folio->the_post(); ?>
-					<article class="project col-md-4">
-						<h2><?php the_title(); ?></h2>
+			
+			<?php 
+			//display content
+			if( $folio->have_posts() ): ?>
+				<?php while( $folio->have_posts() ): $folio->the_post(); ?>
+					<article class="project col-md-3">
+						<div class="proj_header">
+							<h2><?php the_title(); ?></h2>
+							<span class='cat'
+							<?php the_category(); ?> 
+							</span>
+							<span class='tags'>
+							<?php the_tags(); ?>
+							</span>
+						</div>
+						<?php the_post_thumbnail(); ?>
 						<?php the_content(); ?>
 					</article>
 				<?php endwhile; ?>
