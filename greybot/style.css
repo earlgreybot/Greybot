@@ -277,7 +277,8 @@ button,
 input,
 select,
 optgroup,
-textarea {
+textarea,
+ {
 	color: #404040;
 	font-family: 'news cycle', sans-serif;
 	font-size: 16px;
@@ -286,7 +287,13 @@ textarea {
 }
 
 footer, 
-aside {
+aside,
+ul,
+li,
+.tags,
+.posted-on,
+.published,
+.byline {
 	font-family: 'news cycle', sans-serif;
 }
 
@@ -954,6 +961,7 @@ h1, h2, h3, h5, h6 {
 	width: 130px;
 	margin: 1%;
 	padding: 3%;
+	font-family: 'bebas neue';
 }
 
 #logo {
@@ -976,7 +984,7 @@ header {
 } 
 
 .entry-title {
-	margin-bottom: 3%;
+	margin-bottom: 0%;
 	background-color: #ffffff;
 }
 
