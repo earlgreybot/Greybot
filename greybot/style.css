@@ -906,7 +906,7 @@ a {
 
 
 /*--------------------------------------------------------------
-## Header
+## Header / all pages
 --------------------------------------------------------------*/
 
 #grey {
@@ -954,7 +954,7 @@ h1, h2, h3, h5, h6 {
 	width: 130px;
 }
 
-.site-title {
+#logo {
 	padding-top: 4%;
 	font-size: 2em;
 }
@@ -971,6 +971,11 @@ header {
 #logo:hover > a {
 	text-decoration: none;
 } 
+
+.entry-title {
+	margin-bottom: 3%;
+	background-color: #ffffff;
+}
 
 /*--------------------------------------------------------------
 ## Folio
