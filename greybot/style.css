@@ -936,7 +936,7 @@ a {
 	position: relative;
 	float: right;
 	font-family: 'bebas neue', impact;
-	padding: 30px;
+	padding-top: 3%;
 }
 
 h1, h2, h3, h5, h6 {
@@ -965,7 +965,8 @@ header {
 
 #search {
 	font-family: 'news cycle';
-	font-size: 0.5em;
+	font-size: 1em;
+	padding-top: 3%;
 } 
 
 #logo:hover > a {
