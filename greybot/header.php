@@ -42,13 +42,14 @@
 				</a></h1>
 			<?php else : ?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				
-				<span id=grey>
-				G<span id=sm>rey</span>
-				</span>
-				<span id=mcgowan>
-				M<span id=sm>c</span>g<span id=sm>owan</span>
-				</span>
+				<div id=logo>
+					<span id=grey>
+						G<span id=sm>rey</span>
+					</span>
+					<span id=mcgowan>
+						M<span id=sm>c</span>g<span id=sm>owan</span>
+					</span>
+				</div>
 				</a></p>
 			<?php
 			endif;

@@ -965,6 +965,11 @@ header {
 
 #search {
 	font-family: 'news cycle';
+	font-size: 0.5em;
+} 
+
+#logo:hover > a {
+	text-decoration: none;
 } 
 
 /*--------------------------------------------------------------
@@ -995,8 +1000,11 @@ header {
 
 .project {
 	margin-bottom: 10%;
-	
 }
+
+#logo:hover > a {
+	text-decoration: none;
+} 
 
 /*--------------------------------------------------------------
 ## Debug
