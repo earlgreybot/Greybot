@@ -25,8 +25,8 @@
 <div id="page" class="site container-fluid">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'greybot' ); ?></a>
 
-	<header id="masthead" class="site-header row">
-		<div class="site-branding  col-md-4">
+	<header id="masthead" class="site-header">
+		<div class="site-branding">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
@@ -61,7 +61,7 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation col-md-6">
+		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'greybot' ); ?></button>
 			<?php
 				wp_nav_menu( array(
@@ -69,10 +69,10 @@
 					'menu_id'        => 'primary-menu',
 				) );
 			?>
-			
-		<div id=search class='col-md-2'>
+		<div id=search class='search'>
 		<?php get_search_form(); ?>
-		</div>
+		</div>	
+		
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
