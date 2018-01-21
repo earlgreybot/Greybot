@@ -952,6 +952,8 @@ h1, h2, h3, h5, h6 {
 
 .menu-item {
 	width: 130px;
+	margin: 1%;
+	padding: 3%;
 }
 
 #logo {
@@ -977,6 +979,11 @@ header {
 	margin-bottom: 3%;
 	background-color: #ffffff;
 }
+
+.current-menu-item {
+	background-color: #E1E1E6;
+}
+
 
 /*--------------------------------------------------------------
 ## Folio
