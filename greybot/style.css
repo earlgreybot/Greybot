@@ -403,9 +403,9 @@ dd {
 
 img {
 	height: auto;
-	/* Make sure images are scaled correctly. */
+	/* Make sure images are scaled correctly.*/
 	max-width: 100%;
-	/* Adhere to container width. */
+	/*Adhere to container width.*/
 }
 
 figure {
@@ -897,24 +897,22 @@ Dark Blue          rgba(0, 0, 42, 1)                #00002A
 */
 
 
-
-/*--------------------------------------------------------------
-## Colours
---------------------------------------------------------------*/
-body {
-	background-color: #FAFAFA !important;
-	color: #00002A;
-}
-
-a {
-	color: #7D7D7D !important;
-}
-
-
-
 /*--------------------------------------------------------------
 ## Header / all pages
 --------------------------------------------------------------*/
+body {
+	background-color: #FAFAFA !important;
+	color: #00002A !important;
+	}
+
+a {
+	color: #00002A !important;
+	text-decoration: underline !important;
+}
+
+a:hover {
+	color: #7D7D7D !important;
+}
 
 #grey {
 	font-family: 'bebas neue'; 
@@ -958,19 +956,15 @@ h1, h2, h3, h5, h6 {
 }
 
 .menu-item {
-	width: 130px;
-	margin: 1%;
-	padding: 3%;
+	width: 95px;
 	font-family: 'bebas neue';
+	margin: 10px;
+	padding: 5px;
 }
 
 #logo {
 	padding-top: 4%;
 	font-size: 2em;
-}
-
-header {
-	padding-bottom: 3%;
 }
 
 #search {
@@ -982,6 +976,10 @@ header {
 #logo:hover > a {
 	text-decoration: none;
 } 
+
+#logo > a {
+	text-decoration: none !important;
+}
 
 .entry-title {
 	margin-bottom: 0%;
@@ -1026,6 +1024,15 @@ header {
 #logo:hover > a {
 	text-decoration: none;
 } 
+
+
+/*--------------------------------------------------------------
+## Folio Single
+--------------------------------------------------------------*/
+.wp-post-image {
+	float: left;
+	margin: 3%;
+}
 
 /*--------------------------------------------------------------
 ## Debug

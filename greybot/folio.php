@@ -46,8 +46,10 @@ get_header(); ?>
 							<?php the_tags(); ?>
 							</span>
 						</div>
-						<?php the_post_thumbnail(); ?>
-						<?php the_content(); ?>
+						<div class='proj-content'>
+							<?php the_post_thumbnail(); ?>
+							<?php the_content(); ?>
+						</div>
 					</article>
 				<?php endwhile; ?>
 			<?php else: ?>
