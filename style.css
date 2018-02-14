@@ -539,7 +539,7 @@ a:hover, a:active {
 }
 
 .main-navigation ul {
-	display: none;
+	display: block;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
@@ -916,7 +916,7 @@ a:hover {
 
 .grey {
 	font-family: 'bebas neue'; 
-	font-size: 2.2em;
+	font-size: 2em;
 	color: #00002A !important;
 	/* the border is used to create the underline because text-decoration-line doesn't allow the thickness to be modified*/
 	border-bottom-color: #7D7D7D;
@@ -925,14 +925,14 @@ a:hover {
 }
 .mcgowan {
 	font-family: 'bebas neue';
-	font-size: 2.2em;
+	font-size: 2em;
 	color: #7D7D7D;
 	border-bottom-color: #00002A !important;
 	border-bottom-style: solid;
 	border-bottom-width: 13px;		
 }
 .sm{
-	 font-size: 0.9em;
+	 font-size: 0.85em;
 	}
  
 #site-navigation {
@@ -942,7 +942,8 @@ a:hover {
 	float: right;
 	font-family: 'bebas neue', impact;
 	padding: 0px;
-	margin: 0px;
+	margin-top: 3px;
+	margin-left: 0;
 }
 
 .site-branding {
@@ -959,15 +960,25 @@ h1, h2, h3, h5, h6 {
 	font-family: 'News Cycle', Sans !important;
 }
 
-._mi{
-	font-size: 250%;
-	position: relative; 	
+.menu-item {
+	width: 75px;
+	font-family: 'bebas neue';
+	font-size: 0.75em;
+	padding: 5px;
+	margin: 1px;
+	text-align: center !important;
 }
 
-.menu-item {
-	width: 95px;
-	font-family: 'bebas neue';
+.menu-item img {
+	display: inline-block;
+	margin: 0 5px;
+	
 }
+
+.menu-item > a {
+	text-decoration: none !important;
+}
+
 
 #logo {
 	font-size: 2em;
@@ -977,6 +988,9 @@ h1, h2, h3, h5, h6 {
 	font-family: 'news cycle';
 	font-size: 1em;
 	padding-top: 0.5%;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
 } 
 
 #logo:hover > a {

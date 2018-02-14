@@ -118,8 +118,9 @@ add_action( 'widgets_init', 'greybot_widgets_init' );
  */
 function greybot_scripts() {
 	wp_enqueue_style( 'greybot-style', get_stylesheet_uri() );
-
-	wp_enqueue_script( 'greybot-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	
+	//commented out to remove mobile hamburger menu
+	// wp_enqueue_script( 'greybot-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'greybot-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
