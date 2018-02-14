@@ -941,36 +941,42 @@ a:hover {
 	position: relative;
 	float: right;
 	font-family: 'bebas neue', impact;
-	padding-top: 3%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.site-branding {
+	padding: 0px;
+	margin: 0px;
+}
+
+.site-description {
+	font-size: 0.75em;
 }
 
 h1, h2, h3, h5, h6 {
 	color: #7D7D7D;
-	font-family: 'Courgette', cursive !important;
+	font-family: 'News Cycle', Sans !important;
 }
 
 ._mi{
 	font-size: 250%;
-	position: relative; 
-	
+	position: relative; 	
 }
 
 .menu-item {
 	width: 95px;
 	font-family: 'bebas neue';
-	margin: 10px;
-	padding: 5px;
 }
 
 #logo {
-	padding-top: 4%;
 	font-size: 2em;
 }
 
 #search {
 	font-family: 'news cycle';
 	font-size: 1em;
-	padding-top: 3%;
+	padding-top: 0.5%;
 } 
 
 #logo:hover > a {
