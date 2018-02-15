@@ -900,6 +900,10 @@ Dark Blue          rgba(0, 0, 42, 1)                #00002A
 /*--------------------------------------------------------------
 ## Header / all pages
 --------------------------------------------------------------*/
+header {
+	padding: 10px;
+}
+
 body {
 	background-color: #FAFAFA !important;
 	color: #00002A !important;
@@ -1052,6 +1056,18 @@ h1, h2, h3, h5, h6 {
 .wp-post-image {
 	float: left;
 	margin: 3%;
+}
+
+
+/*--------------------------------------------------------------
+## Contact Page
+--------------------------------------------------------------*/
+
+.contactico {
+	margin: 0px;
+	padding: 5px;
+	background-color: white;
+	border: 10px solid #fafafa;
 }
 
 /*--------------------------------------------------------------
