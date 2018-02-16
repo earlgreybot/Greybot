@@ -42,7 +42,7 @@
 				</a></h1>
 			<?php else : ?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<div id=logo>
+				<div id=logo> 
 					<span class=grey>
 						G<span class=sm>rey</span>
 					</span>

@@ -279,7 +279,6 @@ select,
 optgroup,
 textarea,
  {
-	color: #404040;
 	font-family: 'news cycle', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
@@ -376,7 +375,7 @@ hr {
 }
 
 ul, ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 1.5em 0em;
 }
 
 ul {
@@ -390,7 +389,7 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-left: 0.5em;
 }
 
 dt {
@@ -964,6 +963,12 @@ h1, h2, h3, h5, h6 {
 	font-family: 'News Cycle', Sans !important;
 }
 
+.entry-title {
+	background-color: white;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
 .menu-item {
 	width: 75px;
 	font-family: 'bebas neue';
@@ -991,15 +996,23 @@ h1, h2, h3, h5, h6 {
 #search {
 	font-family: 'news cycle';
 	font-size: 1em;
-	padding-top: 0.5%;
 	padding-bottom: 0;
 	padding-left: 0;
 	padding-right: 0;
 } 
 
+#search input {
+	background-color: white;
+	border: 1.5px solid #e1e1e6; 
+	border-radius: 0;
+	height: 30px; 
+	vertical-align: top;
+
+}
+
 #logo:hover > a {
 	text-decoration: none;
-} 
+}
 
 #logo > a {
 	text-decoration: none !important;
@@ -1014,6 +1027,27 @@ h1, h2, h3, h5, h6 {
 	background-color: #E1E1E6;
 }
 
+.widget {
+	padding-left: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+}
+
+.widget li{
+	font-size: 1em;
+	list-style: none;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.widget ul{
+	padding: 0;
+	margin: 0;
+}
+
+.widget-title {
+	display: inline-block;
+}
 
 /*--------------------------------------------------------------
 ## Folio
