@@ -26,7 +26,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'greybot' ); ?></a>
 
 	<header id="masthead" class="site-header row">
-		<div class="site-branding col-md-4 col-s-12">
+		<div class="site-branding col-lg-3 col-md-12 ">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) : ?>
@@ -61,7 +61,7 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation col-md-5 col-s-12">
+		<nav id="site-navigation" class="main-navigation col-lg-6 col-md-12">
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
@@ -69,7 +69,7 @@
 				) );
 			?>
 		</nav><!-- #site-navigation -->
-		<div id=search class='search col-md-3 col-s-12'>
+		<div id=search class='search col-lg-3 col-md-12'>
 		<?php get_search_form(); ?>
 		</div>	
 	</header><!-- #masthead -->

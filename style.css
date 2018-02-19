@@ -940,13 +940,9 @@ a:hover {
  
 #site-navigation {
 	font-size: 200%;
-	display: inline;
-	position: relative;
-	float: right;
 	font-family: 'bebas neue', impact;
 	padding: 0px;
-	margin-top: 3px;
-	margin-left: 0;
+	margin: 12px auto 0 0;
 }
 
 .site-branding {
@@ -988,9 +984,16 @@ h1, h2, h3, h5, h6 {
 	text-decoration: none !important;
 }
 
+.site-branding {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	
+}
 
 #logo {
 	font-size: 2em;
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
 
 #search {
@@ -999,7 +1002,14 @@ h1, h2, h3, h5, h6 {
 	padding-bottom: 0;
 	padding-left: 0;
 	padding-right: 0;
+	margin-top: 1%;
+	margin-bottom: 0;
 } 
+
+#search input[type="submit"] {
+	border: none;
+	margin-top: 3px;
+}
 
 #search input {
 	background-color: white;
@@ -1007,7 +1017,10 @@ h1, h2, h3, h5, h6 {
 	border-radius: 0;
 	height: 30px; 
 	vertical-align: top;
+}
 
+#search input[type='text'] {
+	width: 85%;
 }
 
 #logo:hover > a {
