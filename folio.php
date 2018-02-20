@@ -19,7 +19,7 @@
 get_header(); ?>
 
 	<div id="folio" class="content-area">
-		<h1 id='folioh'> Folio </h1>
+		<h1 id='folioh' class='entry-title'> Folio </h1>
 		<main id="main" class="site-folio row">
 			<?php
 			// query parameters
@@ -39,12 +39,14 @@ get_header(); ?>
 					<article class="project col-md-3">
 						<div class="proj_header">
 							<h2><?php the_title(); ?></h2>
-							<span class='cat'
+							<div class='cat'>
+							<!--
 							<?php the_category(); ?> 
-							</span>
+							</div>
 							<span class='tags'>
 							<?php the_tags(); ?>
 							</span>
+							-->
 						</div>
 						<div class='proj-content'>
 							<?php the_post_thumbnail(); ?>
