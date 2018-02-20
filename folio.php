@@ -38,7 +38,9 @@ get_header(); ?>
 				<?php while( $folio->have_posts() ): $folio->the_post(); ?>
 					<article class="project col-md-3">
 						<div class="proj_header">
+						<a href= <?php the_permalink(); ?>>	
 							<h2><?php the_title(); ?></h2>
+						</a>
 							<div class='cat'>
 							<!--
 							<?php the_category(); ?> 
@@ -49,7 +51,9 @@ get_header(); ?>
 							-->
 						</div>
 						<div class='proj-content'>
+						<a href= <?php the_permalink(); ?>>		
 							<?php the_post_thumbnail(); ?>
+						</a>
 							<?php the_content(); ?>
 						</div>
 					</article>

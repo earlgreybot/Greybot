@@ -221,3 +221,4 @@ function folio_post_type() {
 }
 add_action( 'init', 'folio_post_type', 0 );
 
+?>

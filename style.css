@@ -1079,6 +1079,12 @@ h1, h2, h3, h5, h6 {
 	min-height: 25%;
 }
 
+.proj_header h2 {
+	font-size: 1.5em;
+	text-decoration: none !important;
+	padding: 4%;
+}
+
 .tags{
 	font-size: 0.70em !important;
 }
