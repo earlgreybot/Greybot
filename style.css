@@ -41,11 +41,24 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 	## Captions
 	## Galleries
+#Custom
+	## Colour Desc.
+	## Main Nav
+	## Logo
+	## Generic
+	## Search
+	## Widgets
+	## Folio
+	## Folio Single
+	## Contact
+	## Debug
+
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 html {
+	
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -895,75 +908,14 @@ Dark Blue          rgba(0, 0, 42, 1)                #00002A
 
 */
 
-
 /*--------------------------------------------------------------
-## Header / all pages
+## Main Nav
 --------------------------------------------------------------*/
-header {
-	padding: 10px;
-}
-
-body {
-	background-color: #FAFAFA !important;
-	color: #00002A !important;
-	}
-
-a {
-	color: #00002A !important;
-	text-decoration: underline !important;
-}
-
-a:hover {
-	color: #7D7D7D !important;
-}
-
-.grey {
-	font-family: 'bebas neue'; 
-	font-size: 2em;
-	color: #00002A !important;
-	/* the border is used to create the underline because text-decoration-line doesn't allow the thickness to be modified*/
-	border-bottom-color: #7D7D7D;
-	border-bottom-style: solid;
-	border-bottom-width: 13px;
-}
-.mcgowan {
-	font-family: 'bebas neue';
-	font-size: 2em;
-	color: #7D7D7D;
-	border-bottom-color: #00002A !important;
-	border-bottom-style: solid;
-	border-bottom-width: 13px;		
-}
-.sm{
-	 font-size: 0.85em;
-	}
- 
 #site-navigation {
 	font-size: 200%;
 	font-family: 'bebas neue', impact;
-	padding: auto;
 	margin: 12px auto 0 0;
 	text-align: center;
-}
-
-.site-branding {
-	padding: 0px;
-	margin: 0px;
-}
-
-.site-description {
-	font-size: 0.75em;
-}
-
-h1, h2, h3, h5, h6 {
-	color: #7D7D7D;
-	font-family: 'News Cycle', Sans !important;
-}
-
-.entry-title {
-	background-color: white;
-	padding-left: 10px;
-	padding-bottom: 10px;
 }
 
 .menu-item {
@@ -991,12 +943,89 @@ h1, h2, h3, h5, h6 {
 	
 }
 
+.current-menu-item {
+	background-color: #E1E1E6;
+}
+
+/*--------------------------------------------------------------
+## Logo
+--------------------------------------------------------------*/
+
 #logo {
 	font-size: 2em;
 	margin-left: auto !important;
 	margin-right: auto !important;
 	text-align: center !important; 
 }
+
+#logo:hover > a {
+	text-decoration: none;
+}
+
+#logo > a {
+	text-decoration: none !important;
+}
+
+.grey {
+	font-family: 'bebas neue'; 
+	font-size: 2em;
+	color: #00002A !important;
+	/* the border is used to create the underline because text-decoration-line doesn't allow the thickness to be modified*/
+	border-bottom-color: #7D7D7D;
+	border-bottom-style: solid;
+	border-bottom-width: 13px;
+}
+.mcgowan {
+	font-family: 'bebas neue';
+	font-size: 2em;
+	color: #7D7D7D;
+	border-bottom-color: #00002A !important;
+	border-bottom-style: solid;
+	border-bottom-width: 13px;		
+}
+
+/*small lettering in logo*/
+.sm{
+	 font-size: 0.85em;
+	}
+
+/*--------------------------------------------------------------
+## Generic
+--------------------------------------------------------------*/
+
+header {
+	padding: 10px;
+}
+
+.entry-title {
+	background-color: white;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+h1, h2, h3, h5, h6 {
+	color: #7D7D7D;
+	font-family: 'News Cycle', Sans !important;
+}
+
+body {
+	background-color: #FAFAFA !important;
+	color: #00002A !important;
+	}
+
+a {
+	color: #00002A !important;
+	text-decoration: underline !important;
+}
+
+a:hover {
+	color: #7D7D7D !important;
+}
+
+
+/*--------------------------------------------------------------
+## Search
+--------------------------------------------------------------*/
 
 #search {
 	font-family: 'news cycle';
@@ -1026,22 +1055,9 @@ h1, h2, h3, h5, h6 {
 	width: 85%;
 }
 
-#logo:hover > a {
-	text-decoration: none;
-}
-
-#logo > a {
-	text-decoration: none !important;
-}
-
-.entry-title {
-	margin-bottom: 0%;
-	background-color: #ffffff;
-}
-
-.current-menu-item {
-	background-color: #E1E1E6;
-}
+/*--------------------------------------------------------------
+## Widgets
+--------------------------------------------------------------*/
 
 .widget {
 	padding-left: 10px;
@@ -1064,8 +1080,6 @@ h1, h2, h3, h5, h6 {
 .widget-title {
 	display: inline-block;
 }
-
-
 
 /*--------------------------------------------------------------
 ## Folio
@@ -1118,14 +1132,13 @@ h1, h2, h3, h5, h6 {
 /*--------------------------------------------------------------
 ## Folio Single
 --------------------------------------------------------------*/
+
 .wp-post-image {
 	float: left;
 	margin: 3%;
 }
-
-
 /*--------------------------------------------------------------
-## Contact Page
+## Contact
 --------------------------------------------------------------*/
 
 .contactico {
@@ -1142,3 +1155,5 @@ h1, h2, h3, h5, h6 {
 * {
 	outline: red solid 1px;
 	} 
+	
+*/
