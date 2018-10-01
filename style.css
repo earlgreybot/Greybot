@@ -52,6 +52,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Folio Single
 	## Contact
 	## Debug
+	## 404
 
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -1148,6 +1149,40 @@ a:hover {
 	border: 10px solid #fafafa;
 }
 
+/*--------------------------------------------------------------
+## 404
+--------------------------------------------------------------*/
+
+#error404  {
+	padding: 50px 10px 50px 10px;
+	margin: auto;
+	display: block;
+	position: relative;
+	max-width: 400px;
+	max-height: 400px;
+}
+
+#nothingfound {
+	text-align: center;
+} 
+
+li.wherenext{
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	list-style-type: none;
+}
+
+img.wherenext{
+	max-width: 60px;
+	padding-right: 5px;
+}
+
+span.wherenext{
+	display: inline-block;
+	width: 75%;
+	height: 50px;
+}
 /*--------------------------------------------------------------
 ## Debug
 --------------------------------------------------------------

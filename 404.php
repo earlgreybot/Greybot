@@ -14,41 +14,40 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'greybot' ); ?></h1>
+					<h1 class="page-title"><?php esc_html_e( 'Oops! Something went wrong that page can&rsquo;t be found.', 'greybot' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'greybot' ); ?></p>
-
-					<?php
-						get_search_form();
-
-						the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'greybot' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<p id="nothingfound"><?php esc_html_e( 'It looks like nothing was found at this location', 'greybot' ); ?></p>
+				
+								<img src="http://www.earlgreybot.com/wp-content/uploads/2018/09/path4791.png" alt="a confused looking robot looking at a 404 error" id="error404">
+						</div>
+						<div class="col-md-6">
+						<ul class="wherenext">
+							<a href=http://www.earlgreybot.com/><li class="wherenext">	
+								<img src="http://www.earlgreybot.com/wp-content/uploads/2018/01/idea.svg" class="wherenext" alt="">
+								<span class="wherenext">If you're after more information about me, check out my about page</span>
+							</li></a>
+							<a href=http://www.earlgreybot.com/folio><li class="wherenext">
+								<img src="http://www.earlgreybot.com/wp-content/uploads/2018/01/graphic-tool.svg" class="wherenext" alt="">
+								<span class="wherenext"> If you're looking for a specific project try the search or looking through my folio here</span>
+							</li></a>
+							<a href=http://www.earlgreybot.com/journal><li class="wherenext">
+								<img src="http://www.earlgreybot.com/wp-content/uploads/2018/01/open-book.svg" class="wherenext" alt="">
+								<span class="wherenext">If you're looking for a particular blog post or piece of writing, try my journal</span>
+							</li></a>
+							<a href=http://www.earlgreybot.com/contact><li class="wherenext">
+								<img src="http://www.earlgreybot.com/wp-content/uploads/2018/01/smartphone-1.svg" class="wherenext" alt="">
+								<span class="wherenext"> Don't know what you're looking for? want to let me know what's gotten lost, contact me</span>
+							</li></a>
 						</ul>
-					</div><!-- .widget -->
+						</div>
+					</div>
+				</div>
 
-					<?php
-
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'greybot' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-
-						the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
